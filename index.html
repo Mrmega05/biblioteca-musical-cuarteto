@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biblioteca Musical · Cuarteto de Jóvenes I.E.P. Los Naranjos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-clef">♪</span>
+    <div class="brand-text">
+      <p class="brand-eyebrow">Biblioteca Musical</p>
+      <h1>Cuarteto de Jóvenes</h1>
+      <p class="brand-sub">I.E.P. Los Naranjos</p>
+    </div>
+  </div>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar a modo oscuro">
+    <span class="theme-icon">☾</span> <span class="theme-label">Modo noche</span>
+  </button>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button class="tab-btn active" data-view="inicio">Inicio</button>
+  <button class="tab-btn" data-view="repertorio">Repertorio</button>
+  <button class="tab-btn" data-view="tonalidades">Tonalidades</button>
+  <button class="tab-btn" data-view="temas">Temas</button>
+  <button class="tab-btn" data-view="favoritos">Favoritos ⭐</button>
+</nav>
+
+<main>
+
+  <!-- INICIO -->
+  <section id="view-inicio" class="view active">
+    <div class="hero">
+      <h2 class="hero-title">Todo el repertorio, a un acorde de distancia.</h2>
+      <p class="hero-sub">Busca una alabanza por título, número o tonalidad y abre su partitura al instante.</p>
+      <div class="search-wrap">
+        <input type="text" id="search-hero" placeholder="Buscar por título, número, tonalidad o tema…" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-num" id="stat-total">0</span>
+        <span class="stat-label">Alabanzas en el índice</span>
+      </div>
+      <div class="stat-card stat-ok">
+        <span class="stat-num" id="stat-disponibles">0</span>
+        <span class="stat-label">Partituras disponibles</span>
+      </div>
+      <div class="stat-card stat-warn">
+        <span class="stat-num" id="stat-pendientes">0</span>
+        <span class="stat-label">Pendientes por digitalizar</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" id="stat-tonalidades">0</span>
+        <span class="stat-label">Tonalidades distintas</span>
+      </div>
+    </div>
+
+    <div class="quick-links">
+      <button class="quick-card" data-goto="repertorio">
+        <span class="quick-icon">📖</span>
+        <span class="quick-title">Repertorio completo</span>
+        <span class="quick-desc">Todas las alabanzas, en orden</span>
+      </button>
+      <button class="quick-card" data-goto="tonalidades">
+        <span class="quick-icon">🎹</span>
+        <span class="quick-title">Por tonalidad</span>
+        <span class="quick-desc">Agrupadas por acorde base</span>
+      </button>
+      <button class="quick-card" data-goto="temas">
+        <span class="quick-icon">🏷️</span>
+        <span class="quick-title">Por tema</span>
+        <span class="quick-desc">Clasificadas por mensaje</span>
+      </button>
+      <button class="quick-card" data-goto="favoritos">
+        <span class="quick-icon">⭐</span>
+        <span class="quick-title">Mis favoritos</span>
+        <span class="quick-desc">Guardados en este dispositivo</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- REPERTORIO -->
+  <section id="view-repertorio" class="view">
+    <div class="view-header">
+      <h2>Repertorio</h2>
+      <p class="view-sub">Todas las alabanzas del cuarteto, en su orden original.</p>
+    </div>
+
+    <div class="filter-bar">
+      <input type="text" id="search-repertorio" placeholder="Buscar título, número, tonalidad o tema…" autocomplete="off">
+      <select id="filter-tonalidad"><option value="">Toda tonalidad</option></select>
+      <select id="filter-tema"><option value="">Todo tema</option></select>
+      <select id="filter-disponibilidad">
+        <option value="">Toda disponibilidad</option>
+        <option value="disponible">✅ Disponible</option>
+        <option value="pendiente">⚠️ No disponible</option>
+      </select>
+      <button id="clear-filters" class="btn-ghost">Limpiar filtros</button>
+    </div>
+
+    <p class="results-count" id="repertorio-count"></p>
+    <div class="cards-grid" id="repertorio-grid"></div>
+  </section>
+
+  <!-- TONALIDADES -->
+  <section id="view-tonalidades" class="view">
+    <div class="view-header">
+      <h2>Índice por tonalidad</h2>
+      <p class="view-sub">Las alabanzas agrupadas según el acorde con que fueron registradas.</p>
+    </div>
+    <div id="tonalidades-list" class="grouped-list"></div>
+  </section>
+
+  <!-- TEMAS -->
+  <section id="view-temas" class="view">
+    <div class="view-header">
+      <h2>Índice temático</h2>
+      <p class="view-sub">Clasificación orientativa según el mensaje del título. Una alabanza puede pertenecer a más de un tema.</p>
+    </div>
+    <div id="temas-list" class="grouped-list"></div>
+  </section>
+
+  <!-- FAVORITOS -->
+  <section id="view-favoritos" class="view">
+    <div class="view-header">
+      <h2>Favoritos</h2>
+      <p class="view-sub">Guardados en este dispositivo para acceso rápido.</p>
+    </div>
+    <p class="results-count" id="favoritos-count"></p>
+    <div class="cards-grid" id="favoritos-grid"></div>
+    <p class="empty-state" id="favoritos-empty" hidden>Aún no marcaste ninguna alabanza con ⭐. Ve al Repertorio y toca la estrella de tus preferidas.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Cuarteto de Jóvenes · I.E.P. Los Naranjos — Biblioteca Musical digital</p>
+</footer>
+
+<template id="card-template">
+  <article class="song-card" data-numero="">
+    <button class="fav-btn" aria-label="Marcar como favorito">☆</button>
+    <div class="card-number"></div>
+    <h3 class="card-title"></h3>
+    <div class="card-key">
+      <span class="key-icon">🎹</span>
+      <span class="key-value"></span>
+    </div>
+    <div class="card-tags"></div>
+    <a class="card-open" href="#" target="_blank" rel="noopener">📄 Abrir partitura</a>
+  </article>
+</template>
+
+<script src="fallback-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
