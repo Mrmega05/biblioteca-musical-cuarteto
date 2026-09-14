@@ -76,7 +76,7 @@
   },
   {
     "numero": 9,
-    "titulo": "Confía en Dios",
+    "titulo": "Confia en Dios",
     "tonalidad": "",
     "pdf": null,
     "temas": []
@@ -369,6 +369,13 @@
   },
   {
     "numero": 42,
+    "titulo": "Oh cantadmelas otra vez",
+    "tonalidad": "A",
+    "pdf": null,
+    "temas": []
+  },
+  {
+    "numero": 43,
     "titulo": "Oh escucha la Voz",
     "tonalidad": "C",
     "pdf": "https://drive.google.com/file/d/1Dfj7VkxCHHXAQGbCb6y2PC-BRxMzzXPD/view?usp=drive_link",
@@ -378,7 +385,7 @@
     ]
   },
   {
-    "numero": 43,
+    "numero": 44,
     "titulo": "Oh hermosa Canaán",
     "tonalidad": "G#",
     "pdf": "https://drive.google.com/open?id=1jDNu_y3LGsPUVWB-wSoTfuuDg8iL3Uk7",
@@ -388,7 +395,7 @@
     ]
   },
   {
-    "numero": 44,
+    "numero": 45,
     "titulo": "Oh que esperanza",
     "tonalidad": "Ab",
     "pdf": "https://drive.google.com/open?id=1UODZENg6xofuL0UnIzP1SdpbHhPbYTUy",
@@ -397,7 +404,7 @@
     ]
   },
   {
-    "numero": 45,
+    "numero": 46,
     "titulo": "Padre te Amo",
     "tonalidad": "C",
     "pdf": null,
@@ -407,7 +414,7 @@
     ]
   },
   {
-    "numero": 46,
+    "numero": 47,
     "titulo": "Perdido fui",
     "tonalidad": "Db/F/Ab",
     "pdf": "https://drive.google.com/file/d/12jq_k53LhEFBsg4SiYRfBzn60ePv4gXS/view?usp=drive_link",
@@ -416,7 +423,7 @@
     ]
   },
   {
-    "numero": 47,
+    "numero": 48,
     "titulo": "Por mí.",
     "tonalidad": "G/D/G/B",
     "pdf": "https://drive.google.com/open?id=1HESlAfxxt5L0uqXfnNsccHewTacqL9J3",
@@ -426,7 +433,7 @@
     ]
   },
   {
-    "numero": 48,
+    "numero": 49,
     "titulo": "Rendido a tus pies",
     "tonalidad": "D",
     "pdf": "https://drive.google.com/file/d/1474ZNIVSSBrBpj5oGwG7KkRScwZF8qOj/view?usp=sharing",
@@ -435,7 +442,7 @@
     ]
   },
   {
-    "numero": 49,
+    "numero": 50,
     "titulo": "Rosa de saron",
     "tonalidad": "G/D/G/B",
     "pdf": "https://drive.google.com/open?id=13Fmb22cSAr7cLqZiOQ1e6k911gdbEpkh",
@@ -445,7 +452,7 @@
     ]
   },
   {
-    "numero": 50,
+    "numero": 51,
     "titulo": "Señor al hogar",
     "tonalidad": "B",
     "pdf": "https://docs.google.com/document/d/132Pay4G4lFs9PCRiFoMs2-1t11R0o7u7/edit?usp=drive_link&ouid=116737958113134714315&rtpof=true&sd=true",
@@ -454,7 +461,7 @@
     ]
   },
   {
-    "numero": 51,
+    "numero": 52,
     "titulo": "Señor quiero serte fiel",
     "tonalidad": "D",
     "pdf": null,
@@ -464,7 +471,7 @@
     ]
   },
   {
-    "numero": 52,
+    "numero": 53,
     "titulo": "Si tú amas a cristo",
     "tonalidad": "Eb",
     "pdf": "https://drive.google.com/file/d/10FQIxJsG996S6e-Tk_BG7qmQWZ1FYlxk/view?usp=drive_link",
@@ -474,14 +481,14 @@
     ]
   },
   {
-    "numero": 53,
+    "numero": 54,
     "titulo": "Suenan melodías en mi ser",
     "tonalidad": "",
     "pdf": null,
     "temas": []
   },
   {
-    "numero": 54,
+    "numero": 55,
     "titulo": "Te quiero presentar",
     "tonalidad": "Bb",
     "pdf": "https://drive.google.com/open?id=1YOfx_xfAUBsEpmp6zh7Rhl4U1dRYs-m-",
@@ -490,7 +497,7 @@
     ]
   },
   {
-    "numero": 55,
+    "numero": 56,
     "titulo": "Ven ¡Oh, Pródigo ven!",
     "tonalidad": "F",
     "pdf": "https://drive.google.com/open?id=1BZrMZwFVTy-oET2G5n0qvQGcc3tbmEO2",
@@ -500,7 +507,7 @@
     ]
   },
   {
-    "numero": 56,
+    "numero": 57,
     "titulo": "Voy a mi Hogar",
     "tonalidad": "Db",
     "pdf": "https://drive.google.com/file/d/1PqWun6M6Nz2x5bMXD5WXjomDhrdzckgL/view?usp=drive_link",
@@ -510,7 +517,7 @@
     ]
   },
   {
-    "numero": 57,
+    "numero": 58,
     "titulo": "Ya cristo viene",
     "tonalidad": "C#",
     "pdf": "https://drive.google.com/file/d/1RSqtWz5o4e3yavQTEeL2k_80YLYRHiIX/view?usp=sharing",
@@ -519,7 +526,7 @@
     ]
   },
   {
-    "numero": 58,
+    "numero": 59,
     "titulo": "Ya el día se aproxima",
     "tonalidad": "C/E/G/C",
     "pdf": "https://drive.google.com/open?id=1xcUfoRx8INx4z4GSX8kzkve8N3GJAwx6",
@@ -528,7 +535,7 @@
     ]
   },
   {
-    "numero": 59,
+    "numero": 60,
     "titulo": "Ya pronto vendrá el Rey",
     "tonalidad": "Ab/Eb/C",
     "pdf": "https://drive.google.com/file/d/1IKNJwODUjNt2Esk8JFw5VaKDHTd4CURe/view?usp=drive_link",
